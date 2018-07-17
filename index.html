@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<meta charset="utf-8">
+	<title>RightLabs | Online Forms, Fees and Tickets</title>
+	<meta name="description" content="Activity management, event registration, mobile tickets and the best customer support in the industry. Our integrated platform does the hard work for you.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="assets/favicons/cropped-RightLabs-favicon-32x32.png" sizes="32x32">
+	<link rel="icon" href="assets/favicons/cropped-RightLabs-favicon-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon-precomposed" href="assets/favicons/cropped-RightLabs-favicon-180x180.png">
+	<meta name="msapplication-TileImage" content="assets/favicons/cropped-RightLabs-favicon-270x270.png">
+	<style>
+		form,
+		iframe,
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none !important;">
+		<defs>
+			<symbol id="icon-facebook" viewBox="0 0 960 700">
+				<path fill="currentColor" d="M359.627 635.255v-259.5h-87.365V274.652h87.365v-74.675c0-86.527 52.854-133.604 130.087-133.604 36.979 0 68.771 2.68 78.024 3.938v90.465H514.13c-41.882 0-50.048 19.936-50.048 49.253v64.498H564.18l-12.982 101.186h-87.114v259.542H359.627z"/>
+			</symbol>
+
+			<symbol id="icon-phone" viewBox="0 0 402 402">
+				<path d="M401.1 311.5c-1.1-3.4-8.4-8.5-21.7-15.1-3.6-2.1-8.8-4.9-15.4-8.6-6.7-3.6-12.7-7-18.1-10-5.4-3-10.5-6-15.3-8.8-.8-.6-3.1-2.2-7.1-5-4-2.8-7.4-4.8-10.1-6.1-2.8-1.3-5.5-2-8.1-2-3.8 0-8.6 2.7-14.3 8.1-5.7 5.4-10.9 11.3-15.7 17.7-4.8 6.4-9.8 12.3-15.1 17.7-5.3 5.4-9.7 8.1-13.1 8.1-1.7 0-3.9-.5-6.4-1.4-2.6-1-4.5-1.8-5.9-2.4-1.3-.7-3.6-2-6.8-4-3.2-2-5-3.1-5.4-3.3-26.1-14.5-48.4-31-67.1-49.7-18.6-18.7-35.2-41-49.7-67.1-.2-.4-1.3-2.2-3.3-5.4-2-3.2-3.3-5.5-4-6.9-.7-1.3-1.5-3.3-2.4-5.9s-1.4-4.7-1.4-6.4c0-3.4 2.7-7.8 8.1-13.1 5.4-5.3 11.3-10.4 17.7-15.1 6.4-4.8 12.3-10 17.7-15.7 5.4-5.7 8.1-10.5 8.1-14.3 0-2.7-.7-5.4-2-8.1-1.3-2.8-3.4-6.1-6.1-10.1-2.8-4-4.4-6.4-5-7.1-2.9-4.8-5.8-9.8-8.8-15.3-3-5.4-6.4-11.5-10-18.1-3.6-6.7-6.5-11.8-8.6-15.4C99 9.2 93.9 2 90.5.9c-1.3-.6-3.3-.9-6-.9-5.1 0-11.8.9-20.1 2.9-8.3 1.9-14.8 3.9-19.6 6-9.5 4-19.6 15.6-30.3 34.8C4.9 61.6 0 79.3 0 96.8c0 5.1.3 10.1 1 15s1.9 10.3 3.6 16.4c1.7 6.1 3.1 10.6 4.1 13.6 1 2.9 3 8.2 5.9 15.8 2.9 7.6 4.6 12.3 5.1 14 6.7 18.7 14.6 35.3 23.7 50 15 24.4 35.5 49.5 61.5 75.5s51.2 46.5 75.5 61.5c14.7 9.1 31.3 17 50 23.7 1.7.6 6.4 2.3 14 5.1 7.6 2.9 12.9 4.8 15.8 5.9 2.9 1 7.5 2.4 13.6 4.1 6.1 1.7 11.6 2.9 16.4 3.6 4.9.7 9.9 1 15 1 17.5 0 35.2-4.9 53.1-14.6 19.2-10.7 30.8-20.7 34.8-30.3 2.1-4.8 4.1-11.3 6-19.6 1.9-8.3 2.9-15 2.9-20.1 0-2.6-.3-4.6-.9-5.9z" fill="currentColor"/>
+			</symbol>
+
+			<symbol id="icon-twitter" viewBox="0 0 700 644">
+				<path fill="currentColor" d="M623.151 126.235c-22.981 10.126-47.519 17.02-73.418 20.137 26.367-15.851 46.661-40.897 56.2-70.733a256.622 256.622 0 0 1-81.209 30.966c-23.291-24.851-56.478-40.352-93.322-40.352-70.575 0-127.833 57.179-127.833 127.754 0 10.048 1.169 19.865 3.312 29.212-106.254-5.376-200.472-56.243-263.532-133.521-11.062 18.814-17.293 40.783-17.293 64.267 0 44.403 22.591 83.47 56.866 106.41a127.68 127.68 0 0 1-57.917-15.97v1.559c0 61.93 44.013 113.653 102.555 125.416a129.929 129.929 0 0 1-33.692 4.441c-8.18 0-16.203-.778-24.032-2.26 16.281 50.79 63.488 87.752 119.458 88.806-43.779 34.274-98.931 54.683-158.796 54.683-10.322 0-20.487-.583-30.498-1.751 56.592 36.222 123.781 57.411 195.994 57.411 235.176 0 363.788-194.747 363.788-363.71 0-5.573-.159-11.064-.392-16.556 24.929-18.035 46.664-40.507 63.801-66.214l-.04.005z"/>
+			</symbol>
+
+			<symbol id="icon-youtube" viewBox="75.5 0 809 700">
+				<path fill="currentColor" d="M396.519 454.881V227.734l218.456 113.954-218.406 113.193h-.05zm479.662-266.563s-7.883-55.688-32.14-80.196c-30.724-32.19-65.188-32.341-81.005-34.262-113.093-8.187-282.783-8.187-282.783-8.187h-.403s-169.691 0-282.835 8.187c-15.867 1.92-50.331 2.021-81.055 34.262-24.257 24.508-32.14 80.196-32.14 80.196S75.734 253.86 75.734 319.2v61.396c0 65.392 8.085 130.881 8.085 130.881s7.883 55.589 32.139 80.199c30.724 32.188 71.15 31.178 89.141 34.564 64.682 6.215 274.9 8.086 274.9 8.086s169.892-.203 282.985-8.389c15.866-1.921 50.332-2.023 81.056-34.263 24.257-24.561 32.14-80.25 32.14-80.25s8.085-65.389 8.085-130.879V319.2c.001-65.39-8.084-130.882-8.084-130.882"/>
+			</symbol>
+
+			<symbol id="logo-rightlabs" viewBox="0 0 454 121">
+				<style>.st0{fill:#79869b}.st2{fill:#ff8205}</style>
+				<path class="st0" d="M295.3 82.3h-51.2V0h12.5v69.7h38.7v12.6z"/>
+				<path class="st0" d="M325.3 42.1c-3.8 0-7 1.3-9.8 4-2.7 2.7-4 6-4 9.8 0 3.8 1.3 7 4 9.8 2.7 2.7 6 4 9.8 4 3.8 0 7.1-1.3 9.8-4 2.7-2.7 4-6 4-9.8 0-3.8-1.3-7-4-9.8-2.8-2.6-6-4-9.8-4zm14 36.3c-4.2 2.6-8.8 3.9-14 3.9-7.3 0-13.4-2.6-18.6-7.7-5.2-5.2-7.8-11.4-7.8-18.6s2.6-13.4 7.8-18.6c5.1-5.2 11.3-7.8 18.6-7.8 7.3 0 13.5 2.6 18.7 7.8 5.2 5.1 7.7 11.3 7.7 18.6v26.4h-12.4v-4z"/>
+				<path class="st0" d="M385.8 42.1c-3.8 0-7 1.3-9.8 4-2.7 2.7-4 6-4 9.8 0 3.8 1.3 7 4 9.8 2.7 2.7 6 4 9.8 4 3.8 0 7.1-1.3 9.8-4 2.7-2.7 4-6 4-9.8 0-3.8-1.3-7.1-4-9.8-2.7-2.7-6-4-9.8-4zM359.5 0h12.4v33.4c4.2-2.6 8.9-3.9 14-3.9 7.3 0 13.5 2.6 18.7 7.8 5.2 5.1 7.7 11.3 7.7 18.6 0 7.3-2.6 13.5-7.7 18.6-5.2 5.2-11.4 7.7-18.7 7.7-7.3 0-13.4-2.6-18.6-7.7-5.2-5.2-7.8-11.4-7.8-18.6V0z"/>
+				<path class="st0" d="M436.4 82.3c-4.5 0-8.4-1.4-11.7-4.3-3.6-3.1-5.9-7-5.9-11.7H431c0 1.5 1.5 4.2 3.1 4.8.8.3 1.6.5 2.4.5 2.7 0 5.3-1.1 5.4-4.4 0-1.1-.5-1.9-1.1-2.4-.9-.9-2.6-1.5-5.2-1.8-5.5-.6-9.7-2.5-12.8-5.8-2.7-2.9-4.1-6.3-4.1-10.2 0-4.6 1.5-8.5 4.5-11.9 3.3-3.7 7.5-5.6 12.8-5.6 5.2 0 9.6 1.7 13 5.1 3.4 3.4 4.9 7.7 4.9 12.9h-12.2c0-3.8-1.8-6.2-5.7-6.2-3.4 0-5.3 2-5.3 4.9 0 2.1 2.1 4.3 6.3 4.8 6.4.7 11.1 3 13.9 6.8 1.9 2.6 2.9 5.7 2.9 9.4 0 4.4-1.7 8-5.2 10.9-3.3 2.8-7.4 4.2-12.2 4.2z"/>
+				<path d="M113.7 42.1c-3.8 0-7 1.3-9.8 4-2.7 2.7-4 6-4 9.8 0 3.8 1.3 7 4 9.8 2.7 2.7 6 4 9.8 4 3.8 0 7.1-1.3 9.8-4 2.7-2.7 4-6 4-9.8 0-3.8-1.3-7.1-4-9.8-2.7-2.7-5.9-4-9.8-4zm26.4 45.5c0 11.4-3.4 20.1-10.1 25.9-5.1 4.5-10.9 6.7-17.3 6.7v-12.4c3.1-.1 5.9-1.1 8.5-3 4.4-3.4 6.6-9.1 6.6-17.2v-9.2c-4.1 2.6-8.8 3.9-13.9 3.9-7.3 0-13.4-2.6-18.6-7.7-5.2-5.2-7.8-11.4-7.8-18.6 0-7.3 2.6-13.5 7.8-18.6 5.1-5.2 11.3-7.8 18.6-7.8 7.3 0 13.5 2.6 18.7 7.8 5.1 5.1 7.6 11.3 7.6 18.6l-.1 31.6z" fill="#f81"/>
+				<path class="st2" d="M22.7 48.9c19.1 0 27.2-19 16-29.3-4.4-4.5-12.1-6.7-16-6.7H13v36h9.7zm20.1 33.4L26.5 61.8H13v20.5H0V0h22.7c9.8 0 18.9 3 25.9 10 14.8 16.2 9.8 37.9-8.7 47.6l19.5 24.8-16.6-.1z"/>
+				<path class="st2" d="M79.6 82.3H67.2V28.7L79.6 41v41.3z"/>
+				<path class="st2" d="M174.9 29.6c7.1 0 13.3 2.5 18.3 7.6 5.1 5.1 7.6 11.2 7.6 18.4v26.8h-12.4V55.6c0-3.8-1.3-7-4-9.6-2.7-2.7-5.9-4-9.6-4s-7 1.3-9.6 4c-2.7 2.6-4 5.8-4 9.6v26.8h-12.7V0H161v33.6c4.2-2.7 8.9-4 13.9-4z"/>
+				<path class="st2" d="M235.6 34.2h-10.2v48.1h-11.8V34.2h-10.2V22.4h10.2V0h11.8v22.4h10.2v11.8z"/>
+				<path class="st0" d="M67.1 1.8v17.6l12.5 12.4L111.4 0H93.7L79.5 14.3 67.1 1.8z"/>
+			</symbol>
+		</defs>
+	</svg>
+	<header>
+		<h1 class="visually-hidden">RightLabs</h1>
+
+		<a href="#main" class="visually-hidden-skip-link">Skip To Main Content</a>
+		<br>
+		<a href="#on-this-page" class="visually-hidden-skip-link">Skip To The "On This Page" Navigation</a>
+
+		<nav class="major-navigation" id="major-navigation" aria-labelledby="major-navigation-heading">
+			<h2 class="visually-hidden" id="major-navigation-heading">Major Navigation</h2>
+
+			<ul>
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 454 121" width="60.03305785" height="16" aria-hidden="true">
+							<use href="#logo-rightlabs" xlink:href="#logo-rightlabs"></use>
+						</svg>
+
+						<span class="visually-hidden">Home</span>
+					</a>
+				</li>
+
+				<li>
+					<section id="major-navigation-solutions" aria-labelledby="major-navigation-solutions-heading">
+						<h3 id="major-navigation-solutions-heading">Solutions</h3>
+
+						<ul>
+							<li>
+								<a href="#">ActivityRight</a>
+							</li>
+
+							<li>
+								<a href="#">CampusRight</a>
+							</li>
+
+							<li>
+								<a href="#">InviteRight</a>
+							</li>
+						</ul>
+					</section>
+				</li>
+
+				<li>
+					<section id="major-navigation-resources" aria-labelledby="major-navigation-resources-heading">
+						<h3 id="major-navigation-resources-heading">Resources</h3>
+
+						<ul>
+							<li>
+								<a href="#">Learning Centre</a>
+							</li>
+
+							<li>
+								<a href="#">LabNotes (Blog)</a>
+							</li>
+
+							<li>
+								<a href="#">Promotions &amp; Scholarships</a>
+							</li>
+						</ul>
+					</section>
+				</li>
+
+				<li>
+					<section id="major-navigation-support" aria-labelledby="major-navigation-support-heading">
+						<h3 id="major-navigation-support-heading">Support</h3>
+
+						<ul>
+							<li>
+								<section id="major-navigation-support-campusright-inviteright" aria-labelledby="major-navigation-support-campusright-inviteright-heading">
+									<h4 id="major-navigation-support-campusright-inviteright-heading">
+										<span data-replacement-logo="CampusRight">CampusRight</span>
+										<span class="visually-hidden">/</span>
+										<span data-replacement-logo="InviteRight">InviteRight</span>
+									</h4>
+
+									<ul>
+										<li>
+											<a href="#">Registration or ticket purchase help</a>
+										</li>
+
+										<li>
+											<a href="#">Administration and reporting help</a>
+										</li>
+
+										<li>
+											<a href="#">Form setup help</a>
+										</li>
+									</ul>
+								</section>
+							</li>
+
+							<li>
+								<a href="#">
+									<span data-replacement-logo="ActivityRight">ActivityRight </span>
+									<span>Help</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span data-replacement-logo="ElectionBuddy">ElectionBuddy </span>
+									<span>Support</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</li>
+
+				<li>
+					<section id="major-navigation-about-us" aria-labelledby="major-navigation-about-us-heading">
+						<h3 id="major-navigation-about-us-heading">About Us</h3>
+
+						<ul>
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+
+							<li>
+								<a href="#">Our Story</a>
+							</li>
+
+							<li>
+								<a href="#">Careers</a>
+							</li>
+						</ul>
+					</section>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="search-rightlabs" aria-labelledby="search-rightlabs-heading" role="search">
+			<h2 class="visually-hidden" id="search-rightlabs-heading">Search RightLabs</h2>
+
+			<form action="#" method="get">
+				<label for="search">Search</label>
+				<input type="text" id="search" name="q" placeholder="Enter Search Term(s)">
+				<button type="submit">Go</button>
+			</form>
+		</div>
+
+		<nav id="on-this-page" aria-labelledby="on-this-page-heading">
+			<h2 class="visually-hidden" id="on-this-page-heading">On This Page</h2>
+
+			<ol>
+				<li>
+					<a href="#call-us-now">Call Us Now</a>
+				</li>
+
+				<li>
+					<a href="#book-your-demo">Book Your Demo</a>
+				</li>
+
+				<li>
+					<a href="#advertisements">Advertisements</a>
+
+					<ol>
+						<li>
+							<a href="#advertisement-rightlabs-engaged">RightLabs - "Engaged"</a>
+						</li>
+					</ol>
+				</li>
+
+				<li>
+					<a href="#simplify-your-world-with-a-paperless-automated-and-mobile-solution">Simplify your world with a paperless, automated and mobile solution</a>
+				</li>
+
+				<li>
+					<a href="#testimonials">Testimonials</a>
+				</li>
+
+				<li>
+					<a href="#additional-advertisements">Additional Advertisements</a>
+
+					<ol>
+						<li>
+							<a href="#advertisement-rightlabs-checkmark">RightLabs - "Checkmark"</a>
+						</li>
+					</ol>
+				</li>
+
+				<li>
+					<a href="#latest-labnotes">Latest LabNotes</a>
+				</li>
+
+				<li>
+					<a href="#testimonials">Testimonials</a>
+				</li>
+
+				<li>
+					<a href="#contact-us">Contact Us</a>
+				</li>
+
+				<li>
+					<a href="#connect-with-us-on-social-media">Connect With Us On Social Media</a>
+				</li>
+
+				<li>
+					<a href="#rightlabs-products">RightLabs Products</a>
+				</li>
+
+				<li>
+					<a href="#data-security">Data Security</a>
+				</li>
+
+				<li>
+					<a href="#copyright-information">Copyright Information</a>
+				</li>
+			</ol>
+		</nav>
+	</header>
+
+	<aside id="call-us-now" aria-labelledby="call-us-now-heading">
+		<h2 class="visually-hidden" id="call-us-now-heading">Call Us Now</h2>
+
+		<a href="tel:+1-866-811-3144">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 402 402" width="16" height="16" aria-hidden="true">
+				<use href="#icon-phone" xlink:href="#icon-phone"></use>
+			</svg>
+
+			<span>1-866-811-3144</span>
+		</a>
+	</aside>
+
+	<aside id="book-your-demo" aria-labelledby="book-your-demo-heading">
+		<h2 id="book-your-demo-heading">Book Your Demo</h2>
+
+		<dl>
+			<dt>Book a demonstration by selecting a product below</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="#"><span class="visually-hidden">Book An </span>ActivityRight<span class="visually-hidden"> Demo</span></a>
+					</li>
+
+					<li>
+						<a href="#"><span class="visually-hidden">Book A </span>CampusRight<span class="visually-hidden"> Demo</span></a>
+					</li>
+
+					<li>
+						<a href="#"><span class="visually-hidden">Book An </span>InviteRight<span class="visually-hidden"> Demo</span></a>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	</aside>
+
+	<aside id="advertisements" aria-labelledby="advertisements-heading">
+		<h2 class="visually-hidden" id="advertisements-heading">Advertisements</h2>
+
+		<ul>
+			<li>
+				<article class="advertisement" id="advertisement-rightlabs-engaged" aria-labelledby="advertisement-rightlabs-engaged-heading">
+					<h3 class="visually-hidden" id="advertisement-rightlabs-engaged-heading">RightLabs - "Engaged"</h3>
+
+					<footer>
+						<address>
+							<dl>
+								<dt><small>Advertiser</small></dt>
+								<dd><small><a href="#" rel="author">RightLabs</a></small></dd>
+							</dl>
+						</address>
+					</footer>
+
+					<dl>
+						<dt><i>Background Image</i></dt>
+						<dd>
+							<img src="assets/images/background-advertisement-rightlabs-engaged.png" alt="Illustration: Three different sets of hands accessing a website on a mobile phone, a tablet, and a laptop, respectively.">
+						</dd>
+						<dt><i>Headline</i></dt>
+						<dd>Engaging applications. Engaged people.</dd>
+						<dt><i>Calls-To-Action</i></dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#" class="call-to-action">
+										<img src="assets/images/logo-activityright.svg" alt="ActivityRight">
+										<span class="visually-hidden"> - </span>
+										<span>Parent Engagement &amp; Fees for K-12 Schools &amp; Districts</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#" class="call-to-action">
+										<img src="assets/images/logo-campusright.svg" alt="CampusRight">
+										<span class="visually-hidden"> - </span>
+										<span>Web Forms &amp; Ticketing for Universities &amp; Colleges</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#" class="call-to-action">
+										<img src="assets/images/logo-inviteright.svg" alt="InviteRight">
+										<span class="visually-hidden"> - </span>
+										<span>Ticketing &amp; Registration for Event Planners &amp; Non-Profits</span>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</article>
+			</li>
+		</ul>
+	</aside>
+
+	<main id="main">
+		<section id="simplify-your-world-with-a-paperless-automated-and-mobile-solution" aria-labelledby="simplify-your-world-with-a-paperless-automated-and-mobile-solution-heading">
+			<h2 id="simplify-your-world-with-a-paperless-automated-and-mobile-solution-heading">Simplify your world with a paperless, automated and mobile solution</h2>
+
+			<p>At RightLabs, our team of engagement and user experience experts have been working side-by-side with our clients for over 12 years to develop the most flexible web-based tools on the market. Parent engagement and communications, integrated activity management, intuitive online forms, secure payment and fee collection and automated processes are just the tip of the iceberg. With our simple online platform you can boost response rates, minimize event planning time and take control over your data.</p>
+
+			<p>To start energizing your events and activities, choose your Right process.</p>
+
+			<figure>
+				<img src="assets/images/flowchart.png" alt="Illustration: Flowchart depicting the Right process">
+
+				<figcaption class="visually-hidden">
+					<dl>
+						<dt>Text Description Of This Flowchart:</dt>
+						<dd>
+							<dl>
+								<dt>At the top:</dt>
+								<dd>A funnel with people inside it.</dd>
+								<dt>Leading Into:</dt>
+								<dd>
+									<ul>
+										<li>
+											<span>A bubble with multiple branching bubbles coming off of it.</span>
+
+											<dl>
+												<dt>Which Leads Into:</dt>
+												<dd>
+													<span>A fuel gauge nearing full capacity.</span>
+													<dl>
+														<dt>Which Leads Into:</dt>
+														<dd>An illustration of three gears (pictured at centre).</dd>
+													</dl>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<span>A target with an arrow stuck into it.</span>
+											<dl>
+												<dt>Which Leads Into:</dt>
+												<dd>
+													<ul>
+														<li>An illustration of a rocket ship taking off</li>
+
+														<li>
+															<span>An illustration of a photo (with overlayed text)</span>
+
+															<dl>
+																<dt>Which Leads Into:</dt>
+																<dd>An illustration of three gears (pictured at centre).</dd>
+															</dl>
+														</li>
+
+														<li>An illustration of three gears (pictured at centre).</li>
+													</ul>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+
+									<dl>
+										<dt>Both Of These Branches Lead Into:</dt>
+										<dd>An illustration of three gears (pictured at centre).</dd>
+									</dl>
+								</dd>
+							</dl>
+						</dd>
+						<dt>The illustration of three gears (pictured at centre) leads into:</dt>
+						<dd>
+							<dl>
+								<dt>An illustration of three devices, side by side:</dt>
+								<dd>
+									<ul>
+										<li>A tablet</li>
+										<li>A desktop computer</li>
+										<li>A mobile phone</li>
+									</ul>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+				</figcaption>
+			</figure>
+		</section>
+	</main>
+
+	<aside id="testimonials" aria-labelledby="testimonials-heading">
+		<h2 class="visually-hidden" id="testimonials-heading">Testimonials</h2>
+
+		<ul>
+			<li>
+				<figure class="testimonial" data-teaser-src="assets/images/teaser-testimonial-harry-ainlay-high-school-david-j.png" data-teaser-alt="Screenshot of a YouTube video of a man with glasses being interviewed.">
+					<figcaption>David J., Harry Ainlay High School</figcaption>
+
+					<figure class="video">
+						<blockquote cite="https://www.youtube.com/watch?v=HiAs3C0JFoA">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/HiAs3C0JFoA" title="Harry Ainlay High School Testimonial for InviteRight SchoolTools" allowfullscreen></iframe>
+						</blockquote>
+
+						<figcaption>
+							<dl>
+								<dt><i>Video: </i>Harry Ainlay High School Testimonial for InviteRight SchoolTools</dt>
+
+								<dd>
+									<dl>
+										<dt>Author</dt>
+										<dd><a href="https://www.youtube.com/channel/UCGcuKkrMtYV6kjtvqc3jYJQ">RightLabs</a></dd>
+										<dt>Published On</dt>
+										<dd><time datetime="2012-01-27">Jan 27, 2012</time></dd>
+										<dt>Permalink</dt>
+										<dd><cite><a href="https://www.youtube.com/watch?v=HiAs3C0JFoA">Harry Ainlay High School Testimonial for InviteRight SchoolTools (YouTube)</a></cite></dd>
+										<dt>Transcript</dt>
+										<dd>
+											<article class="transcript" id="transcript-youtube-HiAs3C0JFoA" aria-labelledby="transcript-youtube-HiAs3C0JFoA-heading">
+												<h4 id="transcript-youtube-HiAs3C0JFoA-heading"><i>Transcript: </i> "Harry Ainlay High School Testimonial for InviteRight SchoolTools" by RightLabs</h4>
+
+												<p>Hi, my name is David Jones. I'm the principal of Harry Ainlay High School in Edmonton, Alberta, Canada.</p>
+
+												<p>We've been involved with InviteRight for the last six months; we've been using InviteRight (and their programs) in order for us to collect registration fees, grad fees&hellip; we're booking picture appointments. As well, [we're going to] be using them for ticket sales for a lot of our athletic events.</p>
+
+												<p><i>Interviewer: </i>And how has InviteRight streamlined or helped the process of selling tickets at Harry Ainlay?</p>
+
+												<p><i>David Jones: </i>InviteRight has developed a program that is saving us a lot of time, a lot of resources, a lot of, really &mdash; I think &mdash; wasted time that we've had in the past, and it's made it much more easier for us to use (and gets us some details and some sales <em>immediately</em>). The information is <em>there</em>, and we're really pleased that we've been able to be at the <em>leading edge</em> and <em>the front edge</em> with InviteRight to produce and to develop these programs (with their technical assistance) so that we can provide a better product (and better services) for our clientele.</p>
+
+												<p><i>Interviewer: </i>So you've had a chance now to compare a <em>manual</em> process to <em>the InviteRight process</em>. How do you compare the two processes?</p>
+
+												<p><i>David Jones: </i>When we used the paper, it took a lot of time. And paper, as we know, can accumulate &mdash; and a lot of errors can be made. Using an <em>online</em> product has really enabled us to minimize the errors, and to really maximize &mdash; I believe &mdash; the service to our clientele at Harry Ainlay. So we're really pleased that InviteRight is going to continue to work with us, work with our expertise at our school (at the school level), and provide better service for students.</p>
+
+												<p><i>Interviewer: </i>Now, in terms of support, I mean, this is the first year you've used InviteRight. I'm sure there's been some questions (of us). How has the support been for you guys &mdash; so have you had questions, and how have we answered them?</p>
+
+												<p><i>David Jones: </i>That has been, probably, the number one best seller for InviteRight: the technical support that we've received from InviteRight. We've had lots of questions, and we've been given lots of opportunities &mdash; and answers &mdash; so that we can <em>improve the programs</em>, <em>improve the services</em>, therefore having happier customers. And we're very pleased with the technical support that we've been receiving from InviteRight.</p>
+
+												<footer>
+													<address>
+														<dl>
+															<dt><small>Transcribed By</small></dt>
+															<dd><small><a href="#" rel="author">RightLabs</a></small></dd>
+															<dt><small>Source Video By</small></dt>
+															<dd><small><a href="https://www.youtube.com/channel/UCGcuKkrMtYV6kjtvqc3jYJQ">RightLabs</a></small></dd>
+															<dt><small>Source Video</small></dt>
+															<dd><small><a href="https://www.youtube.com/watch?v=HiAs3C0JFoA">Harry Ainlay High School Testimonial for InviteRight SchoolTools (YouTube)</a></small></dd>
+														</dl>
+													</address>
+												</footer>
+											</article>
+										</dd>
+									</dl>
+								</dd>
+							</dl>
+						</figcaption>
+					</figure>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="testimonial" data-teaser-src="assets/images/teaser-testimonial-foothills-school-division.png" data-teaser-alt="Foothills School Division logo">
+					<figcaption>Foothills School Division</figcaption>
+
+					<blockquote>
+						<p>We’ve saved at least 3 days of work collecting thousands of dollars in school fees and that time saving has been multiplied by the over 20 schools in our district.</p>
+					</blockquote>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="testimonial" data-teaser-src="assets/images/teaser-testimonial-north-dakota-state-university-rhonda-k.jpg" data-teaser-alt="North Dakota State University logo">
+					<figcaption>Rhonda K., <a href="https://www.ndsu.edu/">North Dakota State University</a></figcaption>
+
+					<blockquote>
+						<p>Thank you so much for all of your assistance! We were able to get our invites out this afternoon and we're already seeing responses :) The software is very intuitive.</p>
+					</blockquote>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="testimonial" data-teaser-src="assets/images/teaser-testimonial-west-kildonan-collegiate-high-school-gerry-c.png" data-teaser-alt="Screenshot of a YouTube video of a man with a goatee being interviewed.">
+					<figcaption>Gerry C., West Kildonan Collegiate High School</figcaption>
+
+					<figure class="video">
+						<blockquote cite="https://www.youtube.com/watch?v=GxXIPaSa0y4">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/GxXIPaSa0y4" title="West Kildonan Collegiate High School Testimonial for InviteRight SchoolTools" allowfullscreen></iframe>
+						</blockquote>
+
+						<figcaption>
+							<dl>
+								<dt><i>Video: </i>West Kildonan Collegiate High School Testimonial for InviteRight SchoolTools</dt>
+
+								<dd>
+									<dl>
+										<dt>Author</dt>
+										<dd><a href="https://www.youtube.com/channel/UCGcuKkrMtYV6kjtvqc3jYJQ">RightLabs</a></dd>
+										<dt>Published On</dt>
+										<dd><time datetime="2012-02-21">Feb 21, 2012</time></dd>
+										<dt>Permalink</dt>
+										<dd><cite><a href="https://www.youtube.com/watch?v=GxXIPaSa0y4">West Kildonan Collegiate High School Testimonial for InviteRight SchoolTools (YouTube)</a></cite></dd>
+										<dt>Transcript</dt>
+										<dd>
+											<article class="transcript" id="transcript-youtube-GxXIPaSa0y4" aria-labelledby="transcript-youtube-GxXIPaSa0y4-heading">
+												<h4 id="transcript-youtube-GxXIPaSa0y4-heading"><i>Transcript: </i> "West Kildonan Collegiate High School Testimonial for InviteRight SchoolTools" by RightLabs</h4>
+
+												<p>I'm Gerry Corr. I'm the principal here at West Kildonan Collegiate in Winnipeg. We have a graduating class of about 200 students, and &mdash; last year (2011) &mdash; we used InviteRight for the first time to do our ticket purchases.</p>
+
+												<p>Our graduation dinner had about 600 guests, and we sold the tickets for that dinner in a little over 24 hours &mdash; very painlessly, and we were able to accomodate the needs of all of our students and families quite adequately and in a way that we felt was very much improved from what we <em>used to</em> do.</p>
+
+												<p>In the past, our ticket sales would have been done over the period of, probably, <em>about a week</em>. It would have involved some staff committing a significant amount of time. We would have had &mdash; often &mdash; a large amount of money in the school, and that money would have to be deposited, counted, etc., by a number of different people before hitting the bank. So we were very happy that we were able to do all this through credit cards, through online payment, and &mdash; for everyone involved &mdash; it seemed to work exceptionally well.</p>
+
+												<p>I was quite impressed with the fact, as well, that &mdash; for students, some of whose families might not have credit cards &mdash; we were able to accomodate payment through the school. And for many parents, they were usually able to find alternate solutions even if they didn't have a credit card. So, it worked out quite well.</p>
+
+												<p>Students were very happy in that they didn't have to line up to buy seats for the dinner (so we had no lineups to deal with). Students were also able to sit with the people they wanted to sit with, they were able to view the seating plan <em>almost immediately</em>, and &mdash; for us &mdash; it was very simple to run all of our reports, to run all of our information that we needed to share with the hotel, allergies, vegetarian meals, etc., etc. &mdash; we were able to do that without too much difficulty.</p>
+
+												<p>So, very, very well accommodated by InviteRight, and it was definitely an easy-to-use system.</p>
+
+												<footer>
+													<address>
+														<dl>
+															<dt><small>Transcribed By</small></dt>
+															<dd><small><a href="#" rel="author">RightLabs</a></small></dd>
+															<dt><small>Source Video By</small></dt>
+															<dd><small><a href="https://www.youtube.com/channel/UCGcuKkrMtYV6kjtvqc3jYJQ">RightLabs</a></small></dd>
+															<dt><small>Source Video</small></dt>
+															<dd><small><a href="https://www.youtube.com/watch?v=GxXIPaSa0y4">West Kildonan Collegiate High School Testimonial for InviteRight SchoolTools (YouTube)</a></small></dd>
+														</dl>
+													</address>
+												</footer>
+											</article>
+										</dd>
+									</dl>
+								</dd>
+							</dl>
+						</figcaption>
+					</figure>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="testimonial" data-teaser-src="assets/images/teaser-testimonial-mansfield-university-nancy-p.jpg" data-teaser-alt="Mansfield University logo">
+					<figcaption>Nancy P., <a href="http://www.mansfield.edu/">Mansfield University</a></figcaption>
+
+					<blockquote>
+						<p>This is the company you need for commencement ticketing. The process is streamlined, easy to use and understand for both the administrator and the end user. You'll wonder how you did it the old way!</p>
+					</blockquote>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="testimonial" data-teaser-src="assets/images/teaser-testimonial-kelvin-high-school-keeley-s.png" data-teaser-alt="Kelvin High School logo">
+					<figcaption>Keeley S., Kelvin High School</figcaption>
+
+					<blockquote>
+						<p>The time saved has been the biggest bonus - this job used to take a lot longer and be a lot more complicated.</p>
+					</blockquote>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="testimonial" data-teaser-src="assets/images/teaser-testimonial-edmonton-northlands-kristen-y.jpg" data-teaser-alt="Edmonton Northlands logo">
+					<figcaption>Kristen Y., Edmonton Northlands</figcaption>
+
+					<blockquote>
+						<p>I have been really pleased with InviteRight. Last minute calls from our clients have been dramatically reduced!</p>
+					</blockquote>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="testimonial" data-teaser-src="assets/images/teaser-testimonial-bellerose-composite-high-school-debbie-p.png" data-teaser-alt="Screenshot of a YouTube video of a woman with glasses being interviewed.">
+					<figcaption>Debbie P., Bellerose Composite High School</figcaption>
+
+					<figure class="video">
+						<blockquote cite="https://www.youtube.com/watch?v=f1CAKFUqJ3A">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/f1CAKFUqJ3A" title="Bellerose Composite High School Testimonial for InviteRight SchoolTools" allowfullscreen></iframe>
+						</blockquote>
+
+						<figcaption>
+							<dl>
+								<dt><i>Video: </i>Bellerose Composite High School Testimonial for InviteRight SchoolTools</dt>
+
+								<dd>
+									<dl>
+										<dt>Author</dt>
+										<dd><a href="https://www.youtube.com/channel/UCGcuKkrMtYV6kjtvqc3jYJQ">RightLabs</a></dd>
+										<dt>Published On</dt>
+										<dd><time datetime="2012-01-27">Jan 27, 2012</time></dd>
+										<dt>Permalink</dt>
+										<dd><cite><a href="https://www.youtube.com/watch?v=f1CAKFUqJ3A">Bellerose Composite High School Testimonial for InviteRight SchoolTools (YouTube)</a></cite></dd>
+										<dt>Transcript</dt>
+										<dd>
+											<article class="transcript" id="transcript-youtube-f1CAKFUqJ3A" aria-labelledby="transcript-youtube-f1CAKFUqJ3A-heading">
+												<h4 id="transcript-youtube-f1CAKFUqJ3A-heading"><i>Transcript: </i> "Bellerose Composite High School Testimonial for InviteRight SchoolTools" by RightLabs</h4>
+
+												<p>Hi there! My name is Debbie Pietrzykowski. I am the grad coordinator at Bellerose Composite High School out here in St. Albert.</p>
+
+												<p>We started using InviteRight just this term for our grad payment system, and &mdash; I must say &mdash; it's really been convenient for us.</p>
+
+												<p>We haven't had the steady stream of students coming through my office wanting to pay their fees; it's so much more convenient for the parents to be able to go online at home and to book them <em>that way</em>.</p>
+
+												<p><i>Interviewer: </i>Do you find yourself with a little more free time at this time of year (where normally you'd be pretty busy, I would guess)?</p>
+
+												<p><i>Debbie Pietrzykowski (smiling): </i>Well, this is a pretty busy office, so we really don't ever have any <em>free</em> time, but [it] certainly hasn't been as busy as it has been in [the] past, with so many students coming in during the two or three week period that we have this for. So that's really helped.</p>
+
+												<p>The other thing that's really nice is I'm not handling a lot of cash or cheques; it's done online, and it goes straight into our bank account through Moneris, so that's made things very easy for me to balance and do my deposits.</p>
+
+												<p><i>Interviewer: </i>You've sort of had a chance now to use InviteRight a little bit this year, and you know what you've done in the past. How do you compare the two processes; which do you prefer now at this point?</p>
+
+												<p><i>Debbie Pietrzykowski: </i>Well, of course I prefer InviteRight, because it is so much more easier to handle and process. In the past, there's been a ton of paperwork, and now, it's just a matter of going on and printing one report, and I'm done. So, there's no comparison (to the two), as far as the workload is concerned.</p>
+
+												<p><i>Interviewer: </i>Would you recommend InviteRight for other schools then?</p>
+
+												<p><i>Debbie Pietrzykowski: </i>I would <em>most definitely</em> recommend InviteRight to any school; not only for their graduation invoices and grad gowns, but we're also going to use it in a couple of months for our grad banquet tickets. And the benefits of that: well, the parents will be able to go on, and they'll be able to pick their own seating, the kids will know who's sitting beside them. And so, I can't wait for that feature to take place.</p>
+
+												<footer>
+													<address>
+														<dl>
+															<dt><small>Transcribed By</small></dt>
+															<dd><small><a href="#" rel="author">RightLabs</a></small></dd>
+															<dt><small>Source Video By</small></dt>
+															<dd><small><a href="https://www.youtube.com/channel/UCGcuKkrMtYV6kjtvqc3jYJQ">RightLabs</a></small></dd>
+															<dt><small>Source Video</small></dt>
+															<dd><small><a href="https://www.youtube.com/watch?v=f1CAKFUqJ3A">Bellerose Composite High School Testimonial for InviteRight SchoolTools (YouTube)</a></small></dd>
+														</dl>
+													</address>
+												</footer>
+											</article>
+										</dd>
+									</dl>
+								</dd>
+							</dl>
+						</figcaption>
+					</figure>
+				</figure>
+			</li>
+		</ul>
+	</aside>
+
+	<aside id="additional-advertisements" aria-labelledby="additional-advertisements-heading">
+		<h2 class="visually-hidden" id="additional-advertisements-heading">Additional Advertisements</h2>
+
+		<ul>
+			<li>
+				<article class="advertisement" id="advertisement-rightlabs-checkmark" aria-labelledby="advertisement-rightlabs-checkmark-heading">
+					<h3 class="visually-hidden" id="advertisement-rightlabs-checkmark-heading">RightLabs - "Checkmark"</h3>
+
+					<footer>
+						<address>
+							<dl>
+								<dt><small>Advertiser</small></dt>
+								<dd><small><a href="#" rel="author">RightLabs</a></small></dd>
+							</dl>
+						</address>
+					</footer>
+
+					<dl>
+						<dt><i>Background Image</i></dt>
+						<dd>
+							<img src="assets/images/background-advertisement-rightlabs-checkmark.png" alt="Illustration: A large group of people standing together to form the shape of a checkmark.">
+						</dd>
+						<dt><i>Headline</i></dt>
+						<dd>When 99% of your clients are willing to act as a reference, you know you’re doing <em>something right.</em></dd>
+						<dt><i>Call-To-Action</i></dt>
+						<dd>
+							<a href="#" class="call-to-action">Contact us today to book your free demo</a>
+						</dd>
+					</dl>
+				</article>
+			</li>
+		</ul>
+	</aside>
+
+	<aside id="latest-labnotes" aria-labelledby="latest-labnotes-heading">
+		<h2 id="latest-labnotes-heading">Latest LabNotes</h2>
+
+		<ul>
+			<li>
+				<dl class="preview-lab-note" data-title="ActivityRight – The Right Fees &amp; Engagement Platform for K-12 schools">
+					<dt><a href="#">ActivityRight – The Right Fees &amp; Engagement Platform for K-12 schools</a></dt>
+
+					<dd>
+						<dl>
+							<dt>Author</dt>
+							<dd><a href="#">Gurmeet K</a></dd>
+							<dt>Published On</dt>
+							<dd><time datetime="2017-11-28T11:43:09+00:00">28 Nov, 2017</time></dd>
+							<dt>Category</dt>
+							<dd><a href="#">ActivityRight</a></dd>
+							<dt>Featured Image</dt>
+							<dd>
+								<img src="assets/images/lab-note-activityright-right-fees-engagement-platform-k-12-schools.jpg" alt="Illustration: Several people holding up their cell phones. There are bubbles coming out of two phones: one depicting an online payment, the other depicting the completion of a form.">
+							</dd>
+							<dt>Excerpt</dt>
+							<dd>
+								<blockquote cite="#">RightLabs is usually hustling and bustling with activity. This is where great minds come together to create engaging applications that<ins datetime="2017-11-28T11:43:09+00:00">&hellip;</ins></blockquote>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+			</li>
+
+			<li>
+				<dl class="preview-lab-note" data-title="Happy Holidays!">
+					<dt><a href="#">Happy Holidays!</a></dt>
+
+					<dd>
+						<dl>
+							<dt>Author</dt>
+							<dd><a href="#">RightLabs Staff</a></dd>
+							<dt>Published On</dt>
+							<dd><time datetime="2017-12-20T11:27:40+00:00">20 Dec, 2017</time></dd>
+							<dt>Last Updated On</dt>
+							<dd><time datetime="2018-01-23T09:20:48+00:00">23 Jan, 2018</time></dd>
+							<dt>Categories</dt>
+							<dd>
+								<ul>
+									<li>
+										<a href="#">ActivityRight</a>
+									</li>
+
+									<li>
+										<a href="#">CampusRight</a>
+									</li>
+
+									<li>
+										<a href="#">InviteRight</a>
+									</li>
+								</ul>
+							</dd>
+							<dt>Featured Image</dt>
+							<dd>
+								<img src="assets/images/lab-note-happy-holidays.jpg" alt="A wrapped gift sat atop charcoal-covered linen. Text Content: Have a Merry Christmas &amp; a Fabulous 2018!">
+							</dd>
+							<dt>Excerpt</dt>
+							<dd class="visually-hidden"><abbr aria-label="Not Applicable" title="Not Applicable">N/A</abbr></dd>
+						</dl>
+					</dd>
+				</dl>
+			</li>
+
+			<li>
+				<dl class="preview-lab-note" data-title="Top 5 tips for building effective web forms">
+					<dt><a href="#">Top 5 tips for building effective web forms</a></dt>
+
+					<dd>
+						<dl>
+							<dt>Author</dt>
+							<dd><a href="#">RightLabs Staff</a></dd>
+							<dt>Published On</dt>
+							<dd><time datetime="2017-10-13T13:43:39+00:00">13 Oct, 2017</time></dd>
+							<dt>Last Updated On</dt>
+							<dd><time datetime="2017-10-13T13:45:07+00:00">13 Oct, 2018</time></dd>
+							<dt>Categories</dt>
+							<dd>
+								<ul>
+									<li>
+										<a href="#">ActivityRight</a>
+									</li>
+
+									<li>
+										<a href="#">CampusRight</a>
+									</li>
+
+									<li>
+										<a href="#">InviteRight</a>
+									</li>
+								</ul>
+							</dd>
+							<dt>Featured Image</dt>
+							<dd>
+								<img src="assets/images/lab-note-top-5-tips-building-effective-web-forms.jpg" alt="Illustration: Cranes and girders being used to put together the components of a web page.">
+							</dd>
+							<dt>Excerpt</dt>
+							<dd>
+								<blockquote cite="#">Using InviteRight, you can customize your forms. You have alot of flexibility when buidling forms with us, but it’s important<ins datetime="2017-10-13T13:45:07+00:00">&hellip;</ins></blockquote>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+
+		<a href="#">More LabNotes</a>
+	</aside>
+
+	<footer>
+		<aside id="contact-us" aria-labelledby="contact-us-heading">
+			<h2 id="contact-us-heading">Contact<span class="visually-hidden"> Us</span></h2>
+
+			<address>
+				<dl>
+					<dt class="visually-hidden">Phone Number</dt>
+					<dd><a href="tel:+1-866-811-3144">1-866-811-3144</a></dd>
+					<dt class="visually-hidden">Email Address</dt>
+					<dd><a href="mailto:sales@rightlabs.com">sales@rightlabs.com</a></dd>
+					<dt class="visually-hidden">Address</dt>
+					<dd class="visually-hidden">RightLabs&trade; Inc.</dd>
+					<dd>#217, 8008 104 Street</dd>
+					<dd>Edmonton, <abbr aria-label="Alberta" title="Alberta">AB</abbr> T6E 4E2</dd>
+				</dl>
+			</address>
+		</aside>
+
+		<aside id="connect-with-us-on-social-media" aria-labelledby="connect-with-us-on-social-media-heading">
+			<h2 id="connect-with-us-on-social-media-heading">Connect<span class="visually-hidden"> With Us On Social Media</span></h2>
+
+			<ul>
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 644" width="17.391304349" height="16" aria-hidden="true">
+							<use href="#icon-twitter" xlink:href="#icon-twitter"></use>
+						</svg>
+
+						<span class="visually-hidden">RightLabs on Twitter</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 700" width="21.94285714" height="16" aria-hidden="true">
+							<use href="#icon-facebook" xlink:href="#icon-facebook"></use>
+						</svg>
+
+						<span class="visually-hidden">RightLabs on Facebook</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="75.5 0 809 700" width="18.49142857" height="16">
+							<use href="#icon-youtube" xlink:href="#icon-youtube"></use>
+						</svg>
+
+						<span class="visually-hidden">RightLabs on YouTube</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+
+		<nav id="rightlabs-products" aria-labelledby="rightlabs-products-heading">
+			<h2 class="visually-hidden" id="rightlabs-products-heading">RightLabs Products</h2>
+
+			<ul>
+				<li>
+					<a href="#">ActivityRight</a>
+				</li>
+
+				<li>
+					<a href="#">CampusRight</a>
+				</li>
+
+				<li>
+					<a href="#">InviteRight</a>
+				</li>
+
+				<li>
+					<a href="#">ElectionBuddy</a>
+				</li>
+
+				<li>
+					<a href="#">ContactCentral</a>
+				</li>
+
+				<li>
+					<a href="#">CheersCards</a>
+				</li>
+			</ul>
+		</nav>
+
+		<nav id="data-security" aria-labelledby="data-security-heading">
+			<h2 id="data-security-heading">Data Security</h2>
+
+			<p>Your data is important to us, and we keep it safe!</p>
+
+			<ul>
+				<li>
+					<a href="#">Privacy Policy</a>
+				</li>
+
+				<li>
+					<a href="#">Terms of Service</a>
+				</li>
+			</ul>
+		</nav>
+
+		<aside id="copyright-information" aria-labelledby="copyright-information-heading">
+			<h2 id="copyright-information-heading">Copyright Information</h2>
+
+			<address><small>©2018 <a href="#" rel="author">RightLabs™ Inc.</a>. ActivityRight, CampusRight and InviteRight are trademarks of RightLabs™ Inc. All rights reserved.</small></address>
+		</aside>
+	</footer>
+</html>
